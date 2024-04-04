@@ -8,3 +8,11 @@ export const actionTimeKeeping = (data) => {
   })
 }
 
+export const actionGetHistory = () => {
+  return api({
+    method: "GET",
+    url: "/get-list-keeping-time",
+    
+  })
+}
+

@@ -1,7 +1,7 @@
 // imports page
+import HistoryTime from "./historyTime";
 import HomePage from "./home";
 import LoginPage from "./login";
-import CommonDocument from "./common-document";
 import {
   UsergroupAddOutlined,
   FolderOutlined,
@@ -26,18 +26,18 @@ const pages = [
     name: "home",
     path: "/",
     auth: true,
-    label: "Quản lý tài khoản",
+    label: "Chấm công",
     element: <HomePage />,
-    icon: <UsergroupAddOutlined />,
+    icon: <IssuesCloseOutlined />,
   },
 
   {
-    name: "common-document",
-    path: "/common-document",
+    name: "historyTime",
+    path: "/historyTime",
     auth: true,
-    label: "Quản lý tài liệu",
-    icon: <FolderOutlined />,
-    element: <CommonDocument />,
+    label: "Lịch sử",
+    element: <HistoryTime />,
+    icon: <IssuesCloseOutlined />,
   },
 
 

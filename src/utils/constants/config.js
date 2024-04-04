@@ -20,29 +20,9 @@ export const AIPT_WEB_TOKEN = "AIPT_WEB_DATA_MANAGEMT_TOKEN";
 export const SPINNING_SIZE = "large";
 export const BTN_SIZE_TABLE = "small";
 
-export const DEPARTMENTS_CODE = {
-  1: "Phòng ban 1",
-  2: "Phòng ban 2",
-  3: "Phòng ban 3",
-  //   4: "Phòng xuất nhập khẩu",
-  //   5: "Phòng kế toán",
-  //   6: "Phòng hành chính nhân sự",
-  //   7: "Phòng kinh doanh",
-};
-
-
-
-export const GENDER = {
-  0: "Nữ",
-  1: "Nam",
-};
-
-export const TYPE_POWER = {
-  0: "Nhân viên",
-  1: "Phòng ban",
-}
-export const POSITION_CODE = {
-  1: "Admin",
-  2: "Nhân viên",
+export const TYPE_KEEPING = {
+  0: "Công tác",
+  1: "Nghỉ phép",
+  2: "Đến muộn",
 };
 
