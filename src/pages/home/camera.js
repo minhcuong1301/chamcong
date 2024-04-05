@@ -92,17 +92,12 @@ const Camera = () => {
                         videoConstraints={videoConstraints}
                         onUserMedia={onUserMedia}
                     />
+                 
                     {url && (
                         <img
                             src={url}
                             alt="Screenshot"
-                            style={{
-                                position: "absolute",
-                                top: 0,
-                                left: 0,
-                                width: "100%",
-                                height: "100%"
-                            }}
+                            className="style-img"
                         />
                     )}
 

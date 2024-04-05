@@ -63,16 +63,16 @@ const AppHeader = () => {
     setNotifications(data);
   });
 
-  const handleGetNotifications = async () => {
-    try {
-      const { data, status } = await actionGetNotification();
-      if (status === 200) {
-        setNotifications(data);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const handleGetNotifications = async () => {
+  //   try {
+  //     const { data, status } = await actionGetNotification();
+  //     if (status === 200) {
+  //       setNotifications(data);
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //   } 
+  // };
 
   const handleChangeStatus = async (notification) => {
     try {
@@ -168,11 +168,11 @@ const AppHeader = () => {
     //}
   };
 
-  useEffect(() => {
-    if (token) {
-      handleGetNotifications();
-    }
-  }, [token]);
+  // useEffect(() => {
+  //   if (token) {
+  //     handleGetNotifications();
+  //   }                                                    
+  // }, [token]);
 
   const dropdownMenuNotification = notifications
     .slice(0, 50)
