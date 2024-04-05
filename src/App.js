@@ -30,33 +30,8 @@ const App = () => {
     return !page?.auth
   }, [currentPath])
 
-  const handleGetPositions = async () => {
-    try {
-      const { data, status } = await api({
-        method: "GET",
-        url: "/get-positions",
-      })
-      if (status == 200) {
-        dispatch({ type: actions.SET_POSITIONS, payload: data })
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  
 
-  const handleGetDepartments = async () => {
-    try {
-      const { data, status } = await api({
-        method: "GET",
-        url: "/get-departments",
-      })
-      if (status == 200) {
-        dispatch({ type: actions.SET_DEPARTMENTS, payload: data })
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }
 
   
   const handleCheckNavigate = useCallback(() => {
@@ -71,8 +46,7 @@ const App = () => {
 
   useEffect(() => {
     if (token) {
-      handleGetPositions()
-      handleGetDepartments()
+
       actionGetUserProfileByToken(dispatch)
     }
     else if (!isPublicPage) {

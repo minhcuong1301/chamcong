@@ -18,9 +18,9 @@ const Camera = () => {
 
     const handleClick = (value) => {
         if (selectedValue === value) {
-            setSelectedValue(null); // Nếu radio button đang được chọn thì hủy chọn
+            setSelectedValue(null); 
         } else {
-            setSelectedValue(value); // Nếu radio button không được chọn thì chọn 
+            setSelectedValue(value); 
         }
     };
 
