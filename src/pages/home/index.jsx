@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { SpinCustom } from "components";
-
-
+import Keeping from "./keeping";
 import {
   Layout,
   Row,
-
 } from "antd";
-import Camera from "./camera";
+
+
 const HomePage = () => {
   const [spinning, setSpinning] = useState(false);
   useEffect(() => {
@@ -23,7 +22,8 @@ const HomePage = () => {
         </div>
 
         <div className="common-layout--content">
-        <Camera />
+        <Keeping />
+        {/* <AllCameras/> */}
         </div>
       </SpinCustom>
     </Layout>
