@@ -74,7 +74,7 @@ const App = () => {
       <Layout>
         {!isPublicPage && <AppHeader />}
         {isMobileView ? (
-              <div>Hãy sử dụng trên điện thoại</div>
+              <div style={{fontSize:"large",fontWeight:"bold",textAlign:"center",padding:"20px"}}>Hãy sử dụng trên điện thoại!</div>
             ) : (
               <PageContent />
             )}
