@@ -16,7 +16,7 @@ export const PHONE_PATTERN =
 export const PASSWORD_PATTEN = /^(?=.*\d)(?=.*[a-zA-Z]).{8,}$/;
 
 // Common Config
-export const AIPT_WEB_TOKEN = "AIPT_WEB_DATA_MANAGEMT_TOKEN";
+export const AIPT_WEB_TOKEN = "AIPT_WEB_TIMEKEEPING_TOKEN";
 export const SPINNING_SIZE = "large";
 export const BTN_SIZE_TABLE = "small";
 
