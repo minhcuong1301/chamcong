@@ -1,7 +1,6 @@
 // Server config
 export const { REACT_APP_SERVER_BASE_URL } = process.env || {};
 
-// export const REACT_APP_SERVER_BASE_URL = "http://117.4.254.94:8006"
 
 // Date time fomart
 export const DATETIME_FORMAT = "HH:mm DD-MM-YYYY";
