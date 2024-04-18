@@ -51,8 +51,8 @@ console.log(resultTimeKeep);
     },
     {
       title: "Kiểu PVR",
-      dataIndex: "type_freetime",
-      key: "type_freetime",
+      dataIndex: "keeping_type",
+      key: "keeping_type",
       render: (v) => TYPE_KEEPING[v],
       align: "center",
     },
