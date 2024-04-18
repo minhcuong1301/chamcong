@@ -11,13 +11,13 @@ import {
 
 } from "antd";
 import moment from "moment";
-import { SECOND_FORMAT } from "utils/constants/config";
+import { SECOND_FORMAT, TYPE_KEEPING } from "utils/constants/config";
 import { actionGetHistory } from "./actions";
 
 const HistoryTime = () => {
   const [spinning, setSpinning] = useState(false);
   const [resultTimeKeep, setResultTimeKeep] = useState();
-
+console.log(resultTimeKeep);
   const handlegetTimeKeep = async (d) => {
     setSpinning(true);
     try {
@@ -48,6 +48,13 @@ const HistoryTime = () => {
       render: function (text, record, index) {
         return moment(text * 1000).format(SECOND_FORMAT);
       },
+    },
+    {
+      title: "Kiểu PVR",
+      dataIndex: "type_freetime",
+      key: "type_freetime",
+      render: (v) => TYPE_KEEPING[v],
+      align: "center",
     },
   ]
 
